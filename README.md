@@ -8,3 +8,4 @@
 [Ch03 스프링부트3 구조](/md/note03.md)   
 [Ch04 스프링부트3 테스트](/md/note04.md)   
 [Ch05 스프링부트3 데이터베이스](/md/note05.md)   
+[Ch06 스프링부트3 블로그,API](/md/note06.md)
