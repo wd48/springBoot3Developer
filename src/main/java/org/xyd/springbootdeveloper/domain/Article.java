@@ -44,6 +44,11 @@ public class Article {
         this.title = title;
         this.content = content;
     }
+
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
     
     // @NoArgsConstructor 으로 대체함 : 가독성 향상
 //    // default constructor
