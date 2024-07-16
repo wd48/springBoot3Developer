@@ -9,4 +9,5 @@
 [Ch04 스프링부트3 테스트](/md/note04.md)   
 [Ch05 스프링부트3 데이터베이스](/md/note05.md)   
 [Ch06 스프링부트3 블로그,API](/md/note06.md)   
-[Ch07 스프링부트3 화면구성(thymeleaf)](/md/note07.md)
+[Ch07 스프링부트3 화면구성(thymeleaf)](/md/note07.md)   
+[Ch08 스프링부트3 스프링시큐리티](/md/note08.md)
