@@ -13,7 +13,7 @@ ex. 관리자 - 관리자 페이지 접근 가능, 일반 사용자 - 관리자 
 - CSRF 공격, 세션 고정 공격 방어, 요청 헤더 보안처리
 
 
-![securityFilterChain](./md/upload/securityFilterChain.png)
+![securityFilterChain](/md/upload/securityFilterChain.png)
 
 - UsernamePasswordAuthenticationFilter   
 아이디와 패스워드가 넘어오면 인증 요청을 위임하는 인증 관리자
@@ -36,7 +36,7 @@ ex. 관리자 - 관리자 페이지 접근 가능, 일반 사용자 - 관리자 
 
 
 #### 스프링 시큐리티 인증 절차
-![test](./md/upload/securityFilterFlow.png)
+![test](/md/upload/securityFilterFlow.png)
 1. 사용자가 폼에 아이디와 패스워드를 입력하면, HTTPServletRequest에 아이디와 비밀번호가 전달된다.   
 이 때 AuthenticationFilter가 넘어온 아이디와 비밀번호의 유효성 검사를 수행한다.
 2. 유효성 검사가 끝나면, 실제 구현체인 UsernamePasswordAuthenticationToken을 만들어 넘겨준다.
