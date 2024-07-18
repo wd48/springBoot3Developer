@@ -10,4 +10,5 @@
 [Ch05 스프링부트3 데이터베이스](/md/note05.md)   
 [Ch06 스프링부트3 블로그,API](/md/note06.md)   
 [Ch07 스프링부트3 화면구성(thymeleaf)](/md/note07.md)   
-[Ch08 스프링부트3 스프링시큐리티](/md/note08.md)
+[Ch08 스프링부트3 스프링시큐리티](/md/note08.md)   
+[Ch09 스프링부트3 Jwt 로그인/로그아웃](/md/note09.md)
