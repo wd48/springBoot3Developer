@@ -28,11 +28,8 @@ public class JwtFactory {
         this.expiration = expiration != null ? expiration : this.expiration;
         this.claims = claims != null ? claims : this.claims;
     }
-    // FIXME : error: cannot find symbol
-    //        return JwtFactory.builder().build();
-    //                         ^
-    //  symbol:   method builder()
-    //  location: class JwtFactory
+
+    // testAnnotationProcessor 추가
     public static JwtFactory withDefaultValues() {
         return JwtFactory.builder().build();
     }
