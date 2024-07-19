@@ -1,4 +1,4 @@
-package org.xyd.springbootdeveloper.controller.config.jwt;
+package org.xyd.springbootdeveloper.config.jwt;
 
 import io.jsonwebtoken.Jwts;
 import org.junit.jupiter.api.DisplayName;
