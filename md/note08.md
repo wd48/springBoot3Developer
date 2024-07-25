@@ -1,7 +1,7 @@
 # 스프링 시큐리티
 스프링 기반의 애플리케이션 보안(인증, 인가, 권한)을 담당하는 스프링 하위 프레임워크
 
-### 인증과 인가
+### 인증과 인가 Authentication & Authorization
 1. 인증 authentication : 사용자의 신원을 입증하는 과정      
 ex. 사용자가 사이트에 로그인을 할 때 누구인지 확인하는 과정
 2. 인가 authorization : 사이트의 특정 부분에 접근할 수 있는지 권한을 확인하는 작업   
@@ -13,7 +13,7 @@ ex. 관리자 - 관리자 페이지 접근 가능, 일반 사용자 - 관리자 
 - CSRF 공격, 세션 고정 공격 방어, 요청 헤더 보안처리
 
 
-![securityFilterChain](/md/upload/securityFilterChain.png)
+<img src="upload/securityFilterChain.png" />
 
 - UsernamePasswordAuthenticationFilter   
 아이디와 패스워드가 넘어오면 인증 요청을 위임하는 인증 관리자
@@ -36,8 +36,10 @@ ex. 관리자 - 관리자 페이지 접근 가능, 일반 사용자 - 관리자 
 
 
 #### 스프링 시큐리티 인증 절차
-![test](/md/upload/securityFilterFlow.png)
-1. 사용자가 폼에 아이디와 패스워드를 입력하면, HTTPServletRequest에 아이디와 비밀번호가 전달된다.   
+<img src="upload/securityFilterFlow.png" />
+
+```text
+1. 사용자가 폼에 아이디와 패스워드를 입력 &rarr; HTTPServletRequest에 아이디와 비밀번호가 전달된다.   
 이 때 AuthenticationFilter가 넘어온 아이디와 비밀번호의 유효성 검사를 수행한다.
 2. 유효성 검사가 끝나면, 실제 구현체인 UsernamePasswordAuthenticationToken을 만들어 넘겨준다.
 3. 전달받은 인증용 객체 UsernamePasswordAuthenticationToken을 AuthenticationManager에게 보낸다.
@@ -48,6 +50,7 @@ UserDetailService : 사용자 아이디로 찾은 사용자의 정보를 UserDet
 7. 입력 정보와 UserDetails의 정보를 비교해 실제 인증 처리를 한다.
 8. ~ 10. 까지 인증이 완료되면 SecurityContextHolder에 Authentication을 저장한다.   
 인증 성공 여부에 따라 성공하면 AuthenticationSuccessHandler, 실패하면 AuthenticationFailureHandler 핸들러를 실행한다.
+```
 
 #### 인증 정보를 위한 오버라이드 메서드
 
