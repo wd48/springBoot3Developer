@@ -24,8 +24,10 @@
 ```
 
 ---
+
 DTO(Data Transfer Object) : 계층끼리 데이터를 교환하기 위해 사용하는 객체   
 DAO(Data Access Object) : 데이터베이스와 연결되고 데이터를 조회하고 수정하는 데 사용하는 객체
+
 ---
 
 - 직렬화 & 역직렬화   
